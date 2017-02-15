@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <meta charset="utf-8">
+  <meta name="description" content="Heartbeat is another productivity app for MacOS. The app launcher relies on Spotlight engine. It integrates also many web services to simplify your daily tasks and helps you develop new habits.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heartbeat for MacOS</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      color: #555;
+      font-family:
+       -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        'Helvetica Neue',
+        sans-serif;
+      line-height: 1.2;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    main {
+      margin: 64px 16px;
+      min-height: 100%;
+    }
+
+    header {
+      display: inline-block;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      color: #f12845;
+      display: inline-block;
+      font-size: 36px;
+      text-align: center;
+      vertical-align: 1px;
+    }
+
+    header small {
+      display: block;
+      text-align: right;
+    }
+
+    small {
+      font-weight: lighter;
+    }
+
+    button {
+      background: #f12845;
+      border-radius: 4px;
+      border: 0;
+      color: rgba(255, 255, 255, .98);
+      font-size: 16px;
+      font-weight: bolder;
+      padding: 16px;
+      transition: all ease-out 100ms;
+    }
+
+    button:hover {
+      background: #c5293f;
+    }
+
+    button:active {
+      box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 48px;
+    }
+
+    em {
+      font-family:
+        Georgia,
+        "Palatino Linotype",
+        "Book Antiqua",
+        Palatino,
+        "Times New Roman",
+        Times,
+        serif;
+      font-size: 18px;
+    }
+
+    .logotype {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .logotype img {
+      animation: heartbeat infinite 1500ms;
+      margin-right: 10px;
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      10% {
+        transform: scale(1.1);
+      }
+      20% {
+        transform: scale(1);
+      }
+      30% {
+        transform: scale(1.2);
+      }
+    }
+
+    h2,
+    h3 {
+      color: #1e364b;
+      font-weight: normal;
+      margin-bottom: 16px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin: 90px 16px;
+    }
+
+    article {
+      margin: auto;
+      text-align: left;
+      max-width: 600px;
+    }
+
+    footer {
+      font-size: 14px;
+    }
+
+    marquee {
+      background: #f12845;
+      color: white;
+      font-style: italic;
+      padding: 6px;
+    }
+  </style>
+</head>
+<body>
+  <marquee behavior=scroll direction="left" scrollamount="10">This is a preview</marquee>
+  <main>
+    <header>
+      <div class="logotype">
+        <span><img src="logo.svg" height="30" width="30"><h1>Heartbeat</h1></span>
+      </div>
+      <small>for MacOS</small>
+    </header>
+    <p><em>Keep it flowing</em></p>
+  </main>
+  <section>
+    <article>
+      <h2>An app launcher 🖥</h2>
+      <p>Search your file system and find your applications with the speed of Spotlight engine.</p>
+      <h2>A thing of Internet 🌐</h2>
+      <p>Access to Google, YouTube, Wikipedia and many other APIs in a Heartbeat.</p>
+      <h2>A developer toy 🤓</h2>
+      <p>Heartbeat is built with web technology. Besides having nice defaults, it is also customisable and can be extended using Javascript.</p>
+    </article>
+  </section>
+  <section>
+    <button>Get Heartbeat <small>(Coming soon)</small></button>
+  </section>
+  <section>
+    <article>
+      <h3>Is Heartbeat free?</h3>
+      <p>Yes.</p>
+      <h3>Will Heartbeat be ported to Linux or Windows?</h3>
+      <p>No. Being myself a Mac user, I will focus only on MacOS to provide the best experience possible and a correct support.</p>
+      <h3>How can I extend Heartbeat?</h3>
+      <p>You can start developing your own plugin by reading the documentation. If you are not a developer, you can send me a request.</p>
+      <h3>Are you collecting personal data?</h3>
+      <p>No, not <i>personal</i> data. However, I log bugs that you may encounter and some metrics to understand how you use Heartbeat.</p>
+      <h3>I like the idea but not the execution. What are the alternatives?</h3>
+      <p>You can checkout (in alphabetical order): <a href="https://www.alfredapp.com/">Alfred</a>, <a href="https://cerebroapp.com/">Cerebro</a>, <a href="https://github.com/vutran/dext">Dext</a>, <a href="https://github.com/appetizermonster/hain">Hain</a>, <a href="https://qsapp.com/">QuickSilver</a>, <a href="http://zazuapp.org/">Zazu App</a>.
+      </p>
+    </article>
+  </section>
+  <section>
+    <button>Try Heartbeat <small>(Coming soon)</small></button>
+  </section>
+  <footer>
+    <p>Developed by <a href="https://www.github.com/pioug">@pioug</a></p>
+  </footer>
+</body>
+</html>
