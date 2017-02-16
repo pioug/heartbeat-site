@@ -32,13 +32,23 @@
     }
 
     main {
-      margin: 64px 16px;
+      background-image: url(preview.jpg);
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: auto 480px;
+      color: #fff;
       min-height: 100%;
+      padding: 96px 16px 324px 16px;
+    }
+
+    @media (max-width: 540px) {
+      main {
+        background-position: -570px top;
+      }
     }
 
     header {
       display: inline-block;
-      margin-bottom: 32px;
     }
 
     h1 {
@@ -46,12 +56,14 @@
       display: inline-block;
       font-size: 36px;
       text-align: center;
+      text-shadow: 0 0 1px rgba(0, 0, 0, .9);
       vertical-align: 1px;
     }
 
     header small {
       display: block;
       text-align: right;
+      text-shadow: 0 0 1px rgba(0, 0, 0, .9);
     }
 
     small {
@@ -83,6 +95,7 @@
     }
 
     em {
+      text-transform: capitalize;
       font-family:
         Georgia,
         "Palatino Linotype",
@@ -91,7 +104,8 @@
         "Times New Roman",
         Times,
         serif;
-      font-size: 18px;
+      color: #1e364b;
+      font-size: 22px;
     }
 
     .logotype {
@@ -149,27 +163,22 @@
     footer {
       font-size: 14px;
     }
-
-    marquee {
-      background: #f12845;
-      color: white;
-      font-style: italic;
-      padding: 6px;
-    }
   </style>
 </head>
 <body>
-  <marquee behavior=scroll direction="left" scrollamount="10">This is a preview</marquee>
   <main>
     <header>
       <div class="logotype">
-        <span><img src="logo.svg" height="30" width="30"><h1>Heartbeat</h1></span>
+        <span><img src="logo.svg" height="30" width="30" alt="heartbeat-logo"><h1>Heartbeat</h1></span>
       </div>
       <small>for MacOS</small>
     </header>
-    <p><em>Keep it flowing</em></p>
   </main>
   <section>
+    <button>Download <small>(Coming soon)</small></button>
+  </section>
+  <section>
+    <p><em>Keep it flowing</em></p>
     <article>
       <h2>An app launcher 🖥</h2>
       <p>Search your file system and find your applications with the speed of Spotlight engine.</p>
@@ -183,6 +192,7 @@
     <button>Get Heartbeat <small>(Coming soon)</small></button>
   </section>
   <section>
+    <p><em>FAQ</em></p>
     <article>
       <h3>Is Heartbeat free?</h3>
       <p>Yes.</p>
@@ -191,7 +201,7 @@
       <h3>How can I extend Heartbeat?</h3>
       <p>You can start developing your own plugin by reading the documentation. If you are not a developer, you can send me a request.</p>
       <h3>Are you collecting personal data?</h3>
-      <p>No, not <i>personal</i> data. However, I log bugs that you may encounter and some metrics to understand how you use Heartbeat.</p>
+      <p>No, not <i>personal</i> data. However, I do log errors that you may encounter and some metrics to understand how you use Heartbeat.</p>
       <h3>I like the idea but not the execution. What are the alternatives?</h3>
       <p>You can checkout (in alphabetical order): <a href="https://www.alfredapp.com/">Alfred</a>, <a href="https://cerebroapp.com/">Cerebro</a>, <a href="https://github.com/vutran/dext">Dext</a>, <a href="https://github.com/appetizermonster/hain">Hain</a>, <a href="https://qsapp.com/">QuickSilver</a>, <a href="http://zazuapp.org/">Zazu App</a>.
       </p>
